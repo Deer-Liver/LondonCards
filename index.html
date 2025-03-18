@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    
+    .card {
+      width: 3.5in;
+      height: 2.5in;
+      border: 1px solid #000;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 15px;
+      box-sizing: border-box;
+      font-size: 18px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      page-break-inside: avoid;
+    }
+    
+    .red { background-color: #ff6666; color: white; }
+    .yellow { background-color: #ffff66; }
+    .green { background-color: #66ff66; }
+    .blue { background-color: #6666ff; color: white; }
+    .orange { background-color: #ffaa66; }
+    
+    .print-button {
+      display: block;
+      margin: 20px auto;
+      padding: 12px 24px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    .print-button:hover {
+      background-color: #45a049;
+    }
+    
+    @media print {
+      .print-button {
+        display: none;
+      }
+      
+      body {
+        padding: 0;
+      }
+      
+      .card {
+        margin: 0.25in;
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="print-button" onclick="window.print()">Print to PDF</button>
+  
+  <div class="card-container">
+    <!-- Red Cards -->
+    <div class="card red">
+      <p>What is the most adventurous experience you've ever had?</p>
+    </div>
+    
+    <div class="card red">
+      <p>Would you rather travel into space or the deep ocean?</p>
+    </div>
+    
+    <div class="card red">
+      <p>What makes you laugh out loud?</p>
+    </div>
+    
+    <div class="card red">
+      <p>What's your favorite breakfast?</p>
+    </div>
+    
+    <div class="card red">
+      <p>What do you like to do when you have a day off?</p>
+    </div>
+    
+    <!-- Yellow Cards -->
+    <div class="card yellow">
+      <p>Would you rather see the Super Bowl or be the first person on Mars?</p>
+    </div>
+    
+    <div class="card yellow">
+      <p>What's your most prized possession?</p>
+    </div>
+    
+    <div class="card yellow">
+      <p>If you could stay up all night, what would you like to do?</p>
+    </div>
+    
+    <div class="card yellow">
+      <p>What do you like to do most on the computer?</p>
+    </div>
+    
+    <!-- Green Cards -->
+    <div class="card green">
+      <p>If you could be one character from a movie, who would you choose?</p>
+    </div>
+    
+    <div class="card green">
+      <p>Would you rather be a dolphin, lion, or eagle?</p>
+    </div>
+    
+    <div class="card green">
+      <p>Are you afraid of anything?</p>
+    </div>
+    
+    <div class="card green">
+      <p>Would you rather learn to surf, sail, fish, or ski?</p>
+    </div>
+    
+    <!-- Blue Cards -->
+    <div class="card blue">
+      <p>If you could forward to anytime in the future, when would you go?</p>
+    </div>
+    
+    <div class="card blue">
+      <p>What would your ideal flavor for toothpaste be?</p>
+    </div>
+    
+    <div class="card blue">
+      <p>If you could be invisible for a day, what would you do?</p>
+    </div>
+    
+    <div class="card blue">
+      <p>Where would you love to go on vacation?</p>
+    </div>
+    
+    <!-- Orange Cards -->
+    <div class="card orange">
+      <p>Would you rather only speak in rhymes or wear your shoes on the wrong feet?</p>
+    </div>
+    
+    <div class="card orange">
+      <p>What's your favorite thing to do on a rainy day?</p>
+    </div>
+    
+    <div class="card orange">
+      <p>What is your favorite flower?</p>
+    </div>
+    
+    <div class="card orange">
+      <p>What's the coolest animal you've ever seen?</p>
+    </div>
+  </div>
+</body>
+</html>
